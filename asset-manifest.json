@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/jiohealth/static/css/main.073c9b0a.css",
-    "main.js": "/jiohealth/static/js/main.cefea0c2.js",
-    "static/media/logo.svg": "/jiohealth/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/jiohealth/static/css/main.d55e0377.css",
+    "main.js": "/jiohealth/static/js/main.31530fd4.js",
+    "static/js/483.8b1a5764.chunk.js": "/jiohealth/static/js/483.8b1a5764.chunk.js",
+    "static/media/logo.svg": "/jiohealth/static/media/logo.9cb6fe3bf991ed5f04b89cc0d70c6b04.svg",
     "index.html": "/jiohealth/index.html",
-    "main.073c9b0a.css.map": "/jiohealth/static/css/main.073c9b0a.css.map",
-    "main.cefea0c2.js.map": "/jiohealth/static/js/main.cefea0c2.js.map"
+    "main.d55e0377.css.map": "/jiohealth/static/css/main.d55e0377.css.map",
+    "main.31530fd4.js.map": "/jiohealth/static/js/main.31530fd4.js.map",
+    "483.8b1a5764.chunk.js.map": "/jiohealth/static/js/483.8b1a5764.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.cefea0c2.js"
+    "static/css/main.d55e0377.css",
+    "static/js/main.31530fd4.js"
   ]
 }
