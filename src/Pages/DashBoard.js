@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+import logo from '.././logo.svg'
 import Loadable from 'react-loadable'
-import './index.css';
+import '.././index.css';
 import { Form, Input, Button, Row, Col, Spin } from 'antd';
-import './App.css'
+import '.././App.css'
 import { connect } from 'react-redux'
 import {BrowserRouter,Redirect,Route,Switch} from 'react-router-dom'
 
 const loadablePage = page =>{
   Loadable({
-    loader: ()=> import (`./Pages/${page}`),
+    loader: ()=> import (`./${page}`),
     loading:  <Spin size="large" />,
   });
 }
@@ -35,12 +35,6 @@ class App extends Component {
             </Col>
           </Row>
         </Form>
-        <BrowserRouter basename="/jiohealth">
-          <Switch>
-            <Route exact path="/dashboard" component={loadablePage('Dashboard')} />
-            <Redirect from="*" to="/" />
-          </Switch>
-        </BrowserRouter>
       </div>
     );
   }
