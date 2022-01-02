@@ -1,5 +1,5 @@
 import React from "react";
-import { Row,Col, Button, Avatar,Modal, Form, Input } from "antd";
+import { Row,Col, Button, Avatar,Modal, Form, Input, Checkbox, Radio }  from "antd";
 import ambulance from '../Assets/icons/EmergencyServices/ambulance.png'
 import consultation from '../Assets/icons/EmergencyServices/consultation.png'
 import hospitalBed from '../Assets/icons/EmergencyServices/hospitalBed.png'
@@ -138,11 +138,59 @@ const EmergencyServices =() =>{
                         onClick={()=>{
                             Modal.confirm({
                                 title:" Please Confirm You want to Book Ambulance and check Below Details",
-                                content:(<div>ETA: X mins<br />Charge: XX INR</div>),
-                                onOk: () => {Modal.success({
+                                content:(
+                                        <div
+                                        >ETA: X mins
+                                        <br />
+                                        Charge: XX INR
+                                        <br />
+                                        <Form>
+                                            <Form.Item>
+                                                <Checkbox onChange={(value)=>{
+                                                    if(value.target.checked)Modal.confirm({
+                                                        title: "Patient Details",
+                                                        content: (<div>
+                                                            <Form.Item label="name">
+                                                                <Input />
+                                                            </Form.Item>
+                                                            <Form.Item label="age">
+                                                                <Input />
+                                                            </Form.Item>
+                                                            <Form.Item label="Emergency Contact">
+                                                                <Input />
+                                                            </Form.Item>
+                                                        </div>)
+                                                    })
+                                                }}>I am booking for Someone else</Checkbox>
+                                            </Form.Item>
+                                        </Form>
+                                        
+                                        
+                                        </div>),
+                                onOk: () => {
+                                    Modal.success({
                                     title: "Ambulance is on the way.",
                                     content: (
                                         <Form >
+                                            <Form.Item label="Patient Symptoms (Optional)">
+                                                <Input />
+                                            </Form.Item>
+                                            <Form.Item label="type of Incident (Optional)">
+                                                <Radio.Group>
+                                                    <Radio value="accident">
+                                                        Accident 
+                                                    </Radio>
+                                                    <Radio value="medSit">
+                                                        Ongoing Medical Situation 
+                                                    </Radio>
+                                                    <Radio value="other">
+                                                        Other 
+                                                    </Radio>
+                                                </Radio.Group>
+                                            </Form.Item>
+                                            <Form.Item label="Further Details for the ambulance and medical sevices (Optional)">
+                                                <Input />
+                                            </Form.Item>
                                             <Form.Item label="Further Details for the ambulance and medical sevices (Optional)">
                                                 <Input />
                                             </Form.Item>
