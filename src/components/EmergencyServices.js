@@ -430,7 +430,7 @@ const EmergencyServices =() =>{
                         })}
                     </Select>
                 </Form.Item>
-                <Table dataSource={labTestData} columns={labTestTableColumns} />
+                <Table pagination={false} dataSource={labTestData} columns={labTestTableColumns} />
             </Modal>
         </div>
     );
