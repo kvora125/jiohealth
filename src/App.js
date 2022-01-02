@@ -3,8 +3,8 @@ import './index.css';
 import './App.css'
 import 'antd/dist/antd.css';
 import {BrowserRouter,Redirect,Route,Switch} from 'react-router-dom'
-import HomePage from './pages/HomePage';
-import Dashboard from './pages/DashBoard';
+import HomePage from './Pages/HomePage';
+import Dashboard from './Pages/DashBoard';
 
 const App =()=> {
     return (  
