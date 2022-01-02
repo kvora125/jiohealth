@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './index.css';
 import './App.css'
 import 'antd/dist/antd.css';
@@ -7,15 +7,10 @@ import HomePage from './Pages/HomePage';
 import Dashboard from './Pages/DashBoard';
 
 const App =()=> {
+  const [logIn,setLogIn] =useState (false);
     return (  
       <div>
-        <BrowserRouter basename='/jiohealth' >
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/dashboard" component={Dashboard} />
-            <Redirect from="*" to="/" />
-          </Switch>
-        </BrowserRouter>
+        {logIn? <Dashboard setLogIn={setLogIn} />:<HomePage setLogIn={setLogIn} />}
         <label>This is demo App with dummy data just to portray what actual app would look like. Any of the functionalities here arent working</label>
        </div>    
     );

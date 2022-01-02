@@ -5,7 +5,7 @@ import { Form, Input, Row, Col, Button } from 'antd';
 import '../App.css'
 import { NavLink } from 'react-router-dom';
 
-const HomePage=() =>{
+const HomePage=({setLogIn}) =>{
     return (
       <div className="App">
         <div className="App-header">
@@ -21,7 +21,7 @@ const HomePage=() =>{
           </Form.Item>
           <Row align='center'>
             <Col>
-              <Button><NavLink to="/dashboard">LOGIN</NavLink></Button>
+              <Button onClick={()=>setLogIn(true)}>LOGIN</Button>
             </Col>
           </Row>
         </Form>

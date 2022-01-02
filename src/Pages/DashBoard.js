@@ -7,13 +7,13 @@ import EmergencyServices from '../components/EmergencyServices';
 import Bookings from '../components/Bookings'
 const {TabPane} = Tabs;
 
-const Dashboard = () =>{
+const Dashboard = ({setLogIn}) =>{
     return (
       <div>
         <div className="App-header-small">
-        <img style={{display:'inline'}} src={logo} className="App-logo-small" alt="logo" />  <Button style={{float:'right', margin:'20px'}}><NavLink to="/">LOGOUT</NavLink></Button>
+        <img style={{display:'inline'}} src={logo} className="App-logo-small" alt="logo" />  <Button onClick={()=>setLogIn(false)} style={{float:'right', margin:'20px'}}>LOGOUT</Button>
         </div>
-        <Tabs tabPosition='bottom' centered="true" animated="true" size="large"  destroyInactiveTabPane="true" type="card">
+        <Tabs centered="true" animated="true" size="large"  destroyInactiveTabPane="true" type="card">
           <TabPane style={{ minHeight: '70vh'}} tab="Fitness Tracker" key="1">
               <FitnessTracker />
           </TabPane>

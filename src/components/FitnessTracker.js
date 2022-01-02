@@ -11,16 +11,16 @@ const FitnessTracker =() =>{
     return (
         <div>
             <Row justify="center">
-                    <Col span={12}>
-                        <Button block='true' style={{height:'100%', width:'Auto' , margin:'10px', float:'right'}}>
+                    <Col >
+                        <Button block='true' style={{height:'100%', width:'Auto' , margin:'10px', outline:'none', border: 'none'}}>
                         <Row>
                             <Col>
                                 <Avatar
                                     src={fitness}
                                     size={{
-                                        xs: 80,
-                                        sm: 100,
-                                        md: 100,
+                                        xs: 120,
+                                        sm: 120,
+                                        md: 120,
                                         lg: 120,
                                         xl: 140,
                                         xxl: 160,
@@ -35,16 +35,16 @@ const FitnessTracker =() =>{
                         </Row>
                         </Button>
                     </Col>
-                    <Col span={12}>
-                        <Button style={{height:'100%', width:'Auto', margin:'10px'}}>
+                    <Col>
+                        <Button style={{height:'100%', width:'Auto', margin:'10px', outline:'none', border: 'none'}}>
                         <Row>
                             <Col>
                                 <Avatar
                                     src={healthDetails}
                                     size={{
-                                        xs: 80,
-                                        sm: 100,
-                                        md: 100,
+                                        xs: 120,
+                                        sm: 120,
+                                        md: 120,
                                         lg: 120,
                                         xl: 140,
                                         xxl: 160,
@@ -59,16 +59,16 @@ const FitnessTracker =() =>{
                         </Row>
                         </Button>
                     </Col>
-                    <Col span={12}>
-                        <Button style={{height:'100%', width:'Auto', margin:'10px', float:'right'}}>
+                    <Col >
+                        <Button style={{height:'100%', width:'Auto', margin:'10px', outline:'none', border: 'none'}}>
                         <Row>
                             <Col>
                                 <Avatar
                                     src={exerscise}
                                     size={{
-                                        xs: 80,
-                                        sm: 100,
-                                        md: 100,
+                                        xs: 120,
+                                        sm: 120,
+                                        md: 120,
                                         lg: 120,
                                         xl: 140,
                                         xxl: 160,
@@ -83,16 +83,16 @@ const FitnessTracker =() =>{
                         </Row>
                         </Button>
                     </Col>
-                    <Col span={12}>
-                        <Button style={{height:'100%', width:'Auto', margin:'10px'}}>
+                    <Col >
+                        <Button style={{height:'100%', width:'Auto', margin:'10px', outline:'none', border: 'none'}}>
                         <Row>
                             <Col>
                                 <Avatar
                                     src={calories}
                                     size={{
-                                        xs: 80,
-                                        sm: 100,
-                                        md: 100,
+                                        xs: 120,
+                                        sm: 120,
+                                        md: 120,
                                         lg: 120,
                                         xl: 140,
                                         xxl: 160,
@@ -107,16 +107,16 @@ const FitnessTracker =() =>{
                         </Row>
                         </Button>
                     </Col>
-                    <Col span={12}>
-                        <Button style={{height:'100%', width:'Auto', margin:'10px', float:'right'}}>
+                    <Col >
+                        <Button style={{height:'100%', width:'Auto', margin:'10px', outline:'none', border: 'none'}}>
                         <Row>
                             <Col>
                                 <Avatar
                                     src={meditation}
                                     size={{
-                                        xs: 80,
-                                        sm: 100,
-                                        md: 100,
+                                        xs: 120,
+                                        sm: 120,
+                                        md: 120,
                                         lg: 120,
                                         xl: 140,
                                         xxl: 160,
@@ -131,16 +131,16 @@ const FitnessTracker =() =>{
                         </Row>
                         </Button>
                     </Col>
-                    <Col span={12}>
-                        <Button style={{height:'100%', width:'Auto', margin:'10px'}}>
+                    <Col >
+                        <Button style={{height:'100%', width:'Auto', margin:'10px', outline:'none', border: 'none'}}>
                         <Row>
                             <Col>
                                 <Avatar
                                     src={mentalHealth}
                                     size={{
-                                        xs: 80,
-                                        sm: 100,
-                                        md: 100,
+                                        xs: 120,
+                                        sm: 120,
+                                        md: 120,
                                         lg: 120,
                                         xl: 140,
                                         xxl: 160,
