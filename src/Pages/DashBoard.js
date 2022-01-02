@@ -1,48 +1,31 @@
-import React, { Component } from 'react'
+import React from 'react'
 import logo from '.././logo.svg'
-import Loadable from 'react-loadable'
-import '.././index.css';
-import { Form, Input, Button, Row, Col, Spin } from 'antd';
-import '.././App.css'
-import { connect } from 'react-redux'
-import {BrowserRouter,Redirect,Route,Switch} from 'react-router-dom'
+import { Tabs, Button } from 'antd';
+import { NavLink } from 'react-router-dom';
+import FitnessTracker from '../components/FitnessTracker';
+import EmergencyServices from '../components/EmergencyServices';
+import Bookings from '../components/Bookings'
+const {TabPane} = Tabs;
 
-const loadablePage = page =>{
-  Loadable({
-    loader: ()=> import (`./${page}`),
-    loading:  <Spin size="large" />,
-  });
-}
-
-class App extends Component {
-  render() {
+const Dashboard = () =>{
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Jio Health +. We mange your daily and emergency health needs</h2>
+      <div>
+        <div className="App-header-small">
+        <img style={{display:'inline'}} src={logo} className="App-logo-small" alt="logo" />  <Button style={{float:'right', margin:'20px'}}><NavLink to="/">LOGOUT</NavLink></Button>
         </div>
-        <Form name="login" labelCol={{ span: 8, }} wrapperCol={{ span: 16, }} autoComplete="off">
-          <Form.Item name="username" label="USER NAME">
-            <Input />
-          </Form.Item>
-          <Form.Item name="password" label="PASSWORD">
-            <Input />
-          </Form.Item>
-          <Row>
-            <Col>
-              <Button><a href="./dashboard">LOGIN</a></Button>
-            </Col>
-          </Row>
-        </Form>
+        <Tabs tabPosition='bottom' centered="true" animated="true" size="large"  destroyInactiveTabPane="true" type="card">
+          <TabPane style={{ minHeight: '70vh'}} tab="Fitness Tracker" key="1">
+              <FitnessTracker />
+          </TabPane>
+          <TabPane style={{ minHeight: '70vh'}} tab="Emergency Services" key="2" >
+              <EmergencyServices />
+          </TabPane>
+          <TabPane style={{ minHeight: '70vh'}} tab="My Bookings" key="3" >
+              <Bookings />
+          </TabPane>
+        </Tabs>
       </div>
     );
   }
-}
 
-export default connect(
-  state=>({
-
-  }),
-  {}
-)(App)
+export default Dashboard

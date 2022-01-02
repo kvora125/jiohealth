@@ -1,54 +1,25 @@
-import React, { Component } from 'react'
-import logo from './logo.svg'
-import Loadable from 'react-loadable'
+import React from 'react'
 import './index.css';
-import { Form, Input, Button, Row, Col, Spin } from 'antd';
 import './App.css'
-import { connect } from 'react-redux'
+import 'antd/dist/antd.css';
 import {BrowserRouter,Redirect,Route,Switch} from 'react-router-dom'
+import HomePage from './pages/HomePage';
+import Dashboard from './pages/DashBoard';
 
-const loadablePage = page =>{
-  Loadable({
-    loader: ()=> import (`./Pages/${page}`),
-    loading:  <Spin size="large" />,
-  });
-}
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Jio Health +. We mange your daily and emergency health needs</h2>
-        </div>
-        <Form name="login" labelCol={{ span: 8, }} wrapperCol={{ span: 16, }} autoComplete="off">
-          <Form.Item name="username" label="USER NAME">
-            <Input />
-          </Form.Item>
-          <Form.Item name="password" label="PASSWORD">
-            <Input />
-          </Form.Item>
-          <Row>
-            <Col>
-              <Button><a href="./dashboard">LOGIN</a></Button>
-            </Col>
-          </Row>
-        </Form>
-        <BrowserRouter basename="/jiohealth">
+const App =()=> {
+    return (  
+      <div>
+        <BrowserRouter basename='/jiohealth' >
           <Switch>
-            <Route exact path="/dashboard" component={loadablePage('Dashboard')} />
+            <Route exact path="/" component={HomePage} />
+            <Route path="/dashboard" component={Dashboard} />
             <Redirect from="*" to="/" />
           </Switch>
         </BrowserRouter>
-      </div>
+        <label>This is demo App with dummy data just to portray what actual app would look like. Any of the functionalities here arent working</label>
+       </div>    
     );
-  }
+   
 }
 
-export default connect(
-  state=>({
-
-  }),
-  {}
-)(App)
+export default App;
