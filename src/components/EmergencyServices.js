@@ -172,10 +172,11 @@ const EmergencyServices =() =>{
                                     title: "Ambulance is on the way.",
                                     content: (
                                         <Form >
-                                            <Form.Item label="Patient Symptoms (Optional)">
+                                            <label>All details below are optional</label>
+                                            <Form.Item label="Patient Symptoms">
                                                 <Input />
                                             </Form.Item>
-                                            <Form.Item label="type of Incident (Optional)">
+                                            <Form.Item label="Type of Incident">
                                                 <Radio.Group>
                                                     <Radio value="accident">
                                                         Accident 
@@ -188,10 +189,7 @@ const EmergencyServices =() =>{
                                                     </Radio>
                                                 </Radio.Group>
                                             </Form.Item>
-                                            <Form.Item label="Further Details for the ambulance and medical sevices (Optional)">
-                                                <Input />
-                                            </Form.Item>
-                                            <Form.Item label="Further Details for the ambulance and medical sevices (Optional)">
+                                            <Form.Item label="Further details if any)">
                                                 <Input />
                                             </Form.Item>
                                         </Form>
