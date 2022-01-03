@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/jiohealth/static/css/main.a8ab95a4.css",
-    "main.js": "/jiohealth/static/js/main.848cfdf8.js",
+    "main.css": "/jiohealth/static/css/main.833f6461.css",
+    "main.js": "/jiohealth/static/js/main.afa048c6.js",
+    "static/media/logo.png": "/jiohealth/static/media/logo.ebfeaa1deda2518552cc.png",
     "static/media/labTests.png": "/jiohealth/static/media/labTests.8ad006a502b6dcd69ebf.png",
-    "static/media/mentalHealth.png": "/jiohealth/static/media/mentalHealth.0afddc573fdbe356ed00.png",
     "static/media/calories.png": "/jiohealth/static/media/calories.30abc2dee51686555e7f.png",
     "static/media/insurance.png": "/jiohealth/static/media/insurance.03c964c00f0dae088b8c.png",
     "static/media/meditation.png": "/jiohealth/static/media/meditation.1b1121c4d6ef51568205.png",
+    "static/media/mentalHealth.png": "/jiohealth/static/media/mentalHealth.53c460d9d8c6066f1031.png",
     "static/media/exerscise.png": "/jiohealth/static/media/exerscise.1ec5816dd8ad19e864dc.png",
     "static/media/consultation.png": "/jiohealth/static/media/consultation.300b3f3ad2657dc66184.png",
     "static/media/HealthDetails.png": "/jiohealth/static/media/HealthDetails.2d476878080e3b9a9ea2.png",
@@ -14,13 +15,12 @@
     "static/media/medicines.png": "/jiohealth/static/media/medicines.69c409d7bfd49c9b0c38.png",
     "static/media/ambulance.png": "/jiohealth/static/media/ambulance.c717c690a24c667be6e6.png",
     "static/media/fitness.png": "/jiohealth/static/media/fitness.c23869b7e554691b3c85.png",
-    "static/media/logo.svg": "/jiohealth/static/media/logo.9cb6fe3bf991ed5f04b89cc0d70c6b04.svg",
     "index.html": "/jiohealth/index.html",
-    "main.a8ab95a4.css.map": "/jiohealth/static/css/main.a8ab95a4.css.map",
-    "main.848cfdf8.js.map": "/jiohealth/static/js/main.848cfdf8.js.map"
+    "main.833f6461.css.map": "/jiohealth/static/css/main.833f6461.css.map",
+    "main.afa048c6.js.map": "/jiohealth/static/js/main.afa048c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8ab95a4.css",
-    "static/js/main.848cfdf8.js"
+    "static/css/main.833f6461.css",
+    "static/js/main.afa048c6.js"
   ]
 }
