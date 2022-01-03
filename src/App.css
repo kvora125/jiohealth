@@ -3,7 +3,9 @@
   height: 100vh;
   width: 100vw;
 }
-
+.App-Label{
+  font-size: calc(13vw);
+}
 .App-logo {
   height: 40vmin;
   width:80%;
