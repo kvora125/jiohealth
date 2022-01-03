@@ -12,6 +12,7 @@ const Bookings =() =>{
                         <Col>
                             <Avatar
                                 src={ambulance}
+                                shape="square"
                                 size={{
                                     xs: 80,
                                     sm: 100,
@@ -40,6 +41,7 @@ const Bookings =() =>{
                         <Col>
                             <Avatar
                                 src={hospitalBed}
+                                shape="square"
                                 size={{
                                     xs: 80,
                                     sm: 100,
@@ -68,6 +70,7 @@ const Bookings =() =>{
                         <Col>
                             <Avatar
                                 src={hospitalBed}
+                                shape="square"
                                 size={{
                                     xs: 80,
                                     sm: 100,

@@ -167,6 +167,7 @@ const EmergencyServices =() =>{
                             <Col>
                                 <Avatar
                                     src={hospitalBed}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -178,11 +179,7 @@ const EmergencyServices =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Hospital Bed
-                            </Col>
-                        </Row>
+                        <center>Hospital Bed</center>
                         </Button>
                     </Col>
                     <Col>
@@ -191,6 +188,7 @@ const EmergencyServices =() =>{
                             <Col>
                                 <Avatar
                                     src={labTests}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -202,11 +200,7 @@ const EmergencyServices =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Lab Test
-                            </Col>
-                        </Row>
+                        <center>Lab Test</center>
                         </Button>
                     </Col>
                     <Col>
@@ -215,6 +209,7 @@ const EmergencyServices =() =>{
                             <Col>
                                 <Avatar
                                     src={medicines}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -226,11 +221,7 @@ const EmergencyServices =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Medicines
-                            </Col>
-                        </Row>
+                        <center>Medicines</center>
                         </Button>
                     </Col>
                     <Col>
@@ -239,6 +230,7 @@ const EmergencyServices =() =>{
                             <Col>
                                 <Avatar
                                     src={consultation}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -250,11 +242,7 @@ const EmergencyServices =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Consultation
-                            </Col>
-                        </Row>
+                        <center>Consultation</center>
                         </Button>
                     </Col>
                     <Col>
@@ -263,6 +251,7 @@ const EmergencyServices =() =>{
                             <Col>
                                 <Avatar
                                     src={insurance}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -274,11 +263,7 @@ const EmergencyServices =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Insurance
-                            </Col>
-                        </Row>
+                        <center>Insurance</center>
                         </Button>
                     </Col>
                     <Col>
@@ -353,6 +338,7 @@ const EmergencyServices =() =>{
                             <Col>
                                 <Avatar
                                     src={ambulance}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -364,11 +350,7 @@ const EmergencyServices =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Ambulance
-                            </Col>
-                        </Row>
+                        <center>Ambulance</center>
                         </Button>
                     </Col>
             </Row>

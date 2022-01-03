@@ -11,13 +11,14 @@
 }
 
 .App-logo-small {
-  height: 4vmin;
-  width:30%;
-  margin-top: 20px;
+  height: 6vmin;
+  width:6%;
+  margin:10px;
+  margin-top: -10px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #38b6ff;
   min-height: 40vh;
   margin-bottom: 2vh;
   display: flex;
@@ -28,7 +29,7 @@
   color: white;
 }
 .App-header-small {
-  background-color: #282c34;
+  background-color: #38b6ff;
   height: 10vh;
   text-align: left;
   font-size: calc(10px + 2vmin);

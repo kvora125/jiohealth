@@ -17,6 +17,7 @@ const FitnessTracker =() =>{
                             <Col>
                                 <Avatar
                                     src={fitness}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -28,11 +29,7 @@ const FitnessTracker =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Fitness
-                            </Col>
-                        </Row>
+                        <center> Workout Tracking</center>
                         </Button>
                     </Col>
                     <Col>
@@ -41,6 +38,7 @@ const FitnessTracker =() =>{
                             <Col>
                                 <Avatar
                                     src={healthDetails}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -52,11 +50,7 @@ const FitnessTracker =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Health Details
-                            </Col>
-                        </Row>
+                        <center> Health Details</center>
                         </Button>
                     </Col>
                     <Col >
@@ -65,6 +59,7 @@ const FitnessTracker =() =>{
                             <Col>
                                 <Avatar
                                     src={exerscise}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -76,11 +71,7 @@ const FitnessTracker =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Exerscise
-                            </Col>
-                        </Row>
+                        <center>Activity</center>
                         </Button>
                     </Col>
                     <Col >
@@ -89,6 +80,7 @@ const FitnessTracker =() =>{
                             <Col>
                                 <Avatar
                                     src={calories}
+                                    shape="square"
                                     size={{
                                         xs: 120,
                                         sm: 120,
@@ -100,11 +92,7 @@ const FitnessTracker =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Calorie Tracker
-                            </Col>
-                        </Row>
+                        <center> Calorie Tracker </center>
                         </Button>
                     </Col>
                     <Col >
@@ -112,6 +100,7 @@ const FitnessTracker =() =>{
                         <Row>
                             <Col>
                                 <Avatar
+                                    shape="square"
                                     src={meditation}
                                     size={{
                                         xs: 120,
@@ -124,11 +113,7 @@ const FitnessTracker =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                Meditation
-                            </Col>
-                        </Row>
+                        <center> Mindfulness</center>
                         </Button>
                     </Col>
                     <Col >
@@ -136,6 +121,7 @@ const FitnessTracker =() =>{
                         <Row>
                             <Col>
                                 <Avatar
+                                    shape="square"
                                     src={mentalHealth}
                                     size={{
                                         xs: 120,
@@ -148,11 +134,7 @@ const FitnessTracker =() =>{
                                 />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                MentalHealth
-                            </Col>
-                        </Row>
+                        <center>Health Bytes</center>
                         </Button>
                     </Col>
             </Row>

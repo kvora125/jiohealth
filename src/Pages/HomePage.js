@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../logo.svg'
+import logo from '../logo.png'
 import '../index.css';
 import { Form, Input, Row, Col, Button } from 'antd';
 import '../App.css'
@@ -9,8 +9,15 @@ const HomePage=({setLogIn}) =>{
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Jio Health +. We mange your daily and emergency health needs</h2>
+          <Row>
+            <Col>
+              <img src={logo} className="App-logo" alt="logo" />
+            </Col>
+            <Col>
+            <label style={{fontSize:'200px' ,color:'black'}}>Jio</label><label style={{fontSize:'200px' ,color:'white'}}> Health +</label>
+            </Col>
+          </Row>
+          <h2 style={{color:'white'}}>Welcome to Jio Health +. We mange your daily and emergency health needs</h2>
         </div>
         <Form name="login" labelCol={{ span: 8, }} wrapperCol={{ span: 8, }} autoComplete="off">
           <Form.Item name="username" label="USER NAME">
