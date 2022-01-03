@@ -51,13 +51,13 @@ const Dashboard = ({setLogIn}) =>{
          <Button onClick={()=>{setDrawerVisible(true);}}><MenuOutlined fill='#38b6ff' style={{ fontSize: '25px', color: '#08c' }} /></Button><img style={{display:'inline'}} src={logo} className="App-logo-small" alt="logo" /> <Button onClick={()=>setLogIn(false)} style={{float:'right', marginTop:'20px', marginRight:'20px'}}>LOGOUT</Button>
         </div>
         <Tabs centered="true" animated="true" size="large"  destroyInactiveTabPane="true" type="card">
-        <TabPane style={{ minHeight: '70vh'}} tab="Emergency Services" key="2" >
+        <TabPane style={{ minHeight: '80vh'}} tab="Emergency Services" key="2" >
               <EmergencyServices />
           </TabPane>
-          <TabPane style={{ minHeight: '70vh'}} tab="Fitness & WellBeing" key="1">
+          <TabPane style={{ minHeight: '80vh'}} tab="Fitness & WellBeing" key="1">
               <FitnessTracker />
           </TabPane>
-          <TabPane style={{ minHeight: '70vh'}} tab="My Bookings" key="3" >
+          <TabPane style={{ minHeight: '80vh'}} tab="My Bookings" key="3" >
               <Bookings />
           </TabPane>
         </Tabs>

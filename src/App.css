@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
 }
 .App-Label{
@@ -19,7 +19,7 @@
 
 .App-header {
   background-color: #38b6ff;
-  min-height: 40vh;
+  min-height: 20vh;
   margin-bottom: 2vh;
   display: flex;
   flex-direction: column;
