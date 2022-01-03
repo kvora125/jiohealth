@@ -48,7 +48,7 @@ const Dashboard = ({setLogIn}) =>{
           <br />
         </Drawer>
         <div className="App-header-small">
-         <Button onClick={()=>{setDrawerVisible(true);}}><MenuOutlined fill='#38b6ff' style={{ fontSize: '25px', color: '#08c' }} /></Button><img style={{display:'inline'}} src={logo} className="App-logo-small" alt="logo" /><label style={{fontSize:'40px' ,color:'black', marginTop:'50px'}}>Jio</label><label style={{fontSize:'40px' ,color:'white', marginTop:'20px'}}> Health+</label>  <Button onClick={()=>setLogIn(false)} style={{float:'right', margin:'20px'}}>LOGOUT</Button>
+         <Button onClick={()=>{setDrawerVisible(true);}}><MenuOutlined fill='#38b6ff' style={{ fontSize: '25px', color: '#08c' }} /></Button><img style={{display:'inline'}} src={logo} className="App-logo-small" alt="logo" /> <Button onClick={()=>setLogIn(false)} style={{float:'right', marginTop:'20px', marginRight:'20px'}}>LOGOUT</Button>
         </div>
         <Tabs centered="true" animated="true" size="large"  destroyInactiveTabPane="true" type="card">
         <TabPane style={{ minHeight: '70vh'}} tab="Emergency Services" key="2" >

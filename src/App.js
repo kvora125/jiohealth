@@ -11,7 +11,7 @@ const App =()=> {
     return (  
       <div>
         {logIn? <Dashboard setLogIn={setLogIn} />:<HomePage setLogIn={setLogIn} />}
-        <label style={{bottom:'0px'}}>This is demo App with dummy data just to portray what actual app would look like. Any of the functionalities here arent working</label>
+        <label>This is demo App with dummy data just to portray what actual app would look like. Any of the functionalities here arent working</label>
        </div>    
     );
    

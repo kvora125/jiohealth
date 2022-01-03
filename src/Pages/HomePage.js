@@ -9,14 +9,8 @@ const HomePage=({setLogIn}) =>{
     return (
       <div className="App">
         <div className="App-header">
-          <Row>
-            <Col>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-            <Col>
-            <label  class="App-Label"  style={{color:'black'}}>Jio</label><label class="App-Label" style={{color:'white'}}> Health+</label>
-            </Col>
-          </Row>
+          <img src={logo} className="App-logo" alt="logo" />
+          <br />
           <h2 style={{color:'white'}}>Welcome to Jio Health+. We mange your daily and emergency health needs</h2>
         </div>
         <Form name="login" labelCol={{ span: 8, }} wrapperCol={{ span: 8, }} autoComplete="off">
